@@ -1,0 +1,72 @@
+body{
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+
+}
+.card-list {
+    display: flex;
+    justify-content: flex-start; /* Aligner les cartes à gauche */
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si nécessaire */
+  }
+  
+  /* Card.css */
+.card-container {
+  width: 300px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin: 5px;
+  position: relative; 
+  border-radius: 3px;
+  background-color: white;
+
+}
+
+.card-header {
+
+  color: #383838;
+  padding: 10px;
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+    font-weight: 500;
+}
+
+.card-body {
+  padding-bottom: 100px;
+  padding-top: 40px;
+ 
+
+}
+#content{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  position: absolute;
+
+}
+
+
+img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto; /* Centrer l'image à l'intérieur de la carte */
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* La même largeur que la carte */
+  padding: 12px;
+  background-color: #c9c3c3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: black;
+}

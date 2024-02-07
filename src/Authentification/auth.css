@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/ubo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  padding: 1rem;
+  color: black;
+  background-color: white;
+  margin: auto; 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+
+a, a:visited {
+    color: #fff;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button{
+  background-color: #ffdf00;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 50px;
+}
+
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+    width: 16px;
+    margin-top: 8px;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+    width: 16px;
+    margin-top: 8px;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+#logo{
+  width: 30%;
+}
+
+
+input {
+    /* Style par défaut */
+    border-color: #000000;
+    transition:  border-color 0.5s ease-in-out;
+  }
+  
+input.clicked {
+    /* Style après le clic */
+    border-color: #fcd706; /* Couleur de fond après le clic */
+  }
